@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>留言箱</title>
+<link rel="stylesheet" href="message.css">
+</head>
+<body class="D">
+<style type="text/css">
+.D{
+	background-image:url(B.jpg);
+	background-size:100% 100%;}
+</style>
+
+<h1 class="heading">留言箱</h1>
+<div>
+	<textarea name="" placeholder="请输入内容，点击右下角发送按钮" id="inp1" cols="100" rows="20"></textarea>
+	<button onClick="add();">发送</button>
+</div>
+<hr>
+<div>
+	<li id="li">
+    	<!--<ol><button></ol>
+        <ol></ol>
+        <ol></ol>
+        <ol></ol>
+        <ol></ol>-->
+    </li>
+</div>
+</body>
+<script type="text/javascript">
+	var inp1=document.getElementById("inp1");
+	var li=document.getElementById("li");
+	var m=1;
+	function add(){
+		var ol=document.createElement("ol");
+		if(inp1.value!=""){
+			
+			ol.innerHTML=m+". "+inp1.value+'<button onClick="del(this);">删除</button>';
+			li.appendChild(ol);
+			inp1.value="";
+			m++;
+		}else{
+			alert("*输入内容为空！！！");
+		}
+	}
+	function del(btn){
+			var ol=btn.parentNode;
+			li.removeChild(ol);
+			
+	}
+</script>
+</html>

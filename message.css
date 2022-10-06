@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    
+    transition: all .2s linear;
+    line-height: 1.5;
+}
+html{
+	font-size:62.5%;
+	overflow-x:hidden;
+	scroll-behavior:smooth;/*css平滑滚动*/
+}
+body{
+	background:#fcf2e8;
+	padding-left:30rem;
+}
+.heading{
+	font-size:4rem;
+	padding-bottom:1rem;
+	color:#111;
+}
+button{
+	border-radius:50%;
+	color:#99F;
+	
+}

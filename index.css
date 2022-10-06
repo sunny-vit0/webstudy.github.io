@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    
+    transition: all .2s linear;
+    line-height: 1.5;
+}
+html{
+	font-size:62.5%;
+	overflow-x:hidden;
+	scroll-behavior:smooth;/*css平滑滚动*/
+}
+body{
+	background:#fcf2e8;
+	padding-left:30rem;
+}
+section{
+	padding:1rem 5%;
+	min-height:100vh;
+}
+.heading{
+	font-size:4rem;
+	padding-bottom:1rem;
+	color:#111;
+}
+header{
+    position: fixed;
+    top:0; 
+    left:0; 
+    bottom:0;
+    background:rgb(206,190,217);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    flex-flow: column;
+    padding:8rem 2rem;
+    width:30rem;
+    text-align: center;
+}
+header .navbar a{
+    display: block;
+    font-size: 2rem;
+    color:#FFC;
+    margin:2rem 0;
+}
+header .navbar a:hover{
+    letter-spacing: .2rem;
+    color:pink;
+}
+.hi{
+	font-size:30px;
+	color:#CCF;
+}
+h1{
+	font-size:25px;
+	color:#FCF;
+}
+.image img{
+	border-radius:100%;
+		
+}
+
+
+
+
+
+	
+	
