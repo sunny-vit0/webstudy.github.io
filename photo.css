@@ -28,8 +28,8 @@ section{
 	color:#111;
 }
 .file .box-container{
-    display: flex;
-    flex-wrap: wrap;
+    display: flex;/*设置为flex布局*/
+    flex-wrap: wrap;/*规定灵活的项目在必要的时候拆行或拆列（一行放不下，自动换行）*/
     gap:1.5rem;
 }
 .file .box-container .box{
