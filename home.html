@@ -1,66 +1,11 @@
 <!doctype html>
-<html>
+<html lang="zh-CN">
 <head>
 <meta charset="utf-8">
-<title>hometown</title>
+<title></title>
 <link rel="stylesheet" href="home.css">
-<style type="text/css">
-.Box{
-	border-top:2px solid cadetblue;
-    width:100%;
-    height:250px;
-    margin:0 auto;           
-    }        
-.Box img{
-    width:100%;
-    height:500px;
-    margin:0 auto;
-    padding-top:30px;
-    }		
-.img1{
-    display: block;
-    }        
-.img2{
-    display: none;
-    }        
-.img3{
-    display: none;
-    }        
-.img4{
-    display: none;
-    }		
-.img5{
-    display: none;
-    }        
-.img6{
-    display: none;
-    }		
-.img7{
-    display: none;
-    }        
-.img8{
-    display: none;
-    }		
-.img9{
-    display: none;
-    }        
-.img10{
-    display: none;
-    }		
-.img11{
-    display: none;
-    }        
-.img12{
-    display: none;
-    }		
-.img13{
-    display: none;
-    }        
-.img14{
-    display: none;
-    }
-</style>
 </head>
+
 <body class="D">
 <style type="text/css">
 .D{
@@ -68,41 +13,16 @@
 	background-size:100% 100%;}
 </style>
 <h1 class="heading">我的家乡</h1>
-<div class="up">
-<p>美景展示</p>
+<div class="d1">
+	<section>
+    	<div><img src="image2/B1.jpg" alt="" /></div>
+        <div><img src="image2/B3.jpg" alt="" /></div>
+        <div><img src="image2/B5.jpg" alt="" /></div>
+        <div><img src="image2/B7.jpg" alt="" /></div>
+        <div><img src="image2/B11.jpg" alt="" /></div>
+        <div><img src="image2/B13.jpg" alt="" /></div>
+    </section>
 </div>
-<div class="Box">
-    <img class="img-slide img1" src="image2/B1.jpg" alt="1">
-    <img class="img-slide img2" src="image2/B2.jpg" alt="2">
-    <img class="img-slide img3" src="image2/B3.jpg" alt="3">
-    <img class="img-slide img4" src="image2/B4.jpg" alt="4">
-    <img class="img-slide img5" src="image2/B5.jpg" alt="5">
-    <img class="img-slide img6" src="image2/B6.jpg" alt="6">
-    <img class="img-slide img7" src="image2/B13.jpg" alt="7">
-    <img class="img-slide img8" src="image2/B14.jpg" alt="8">
-    <img class="img-slide img9" src="image2/B12.jpg" alt="9">
-    <img class="img-slide img10" src="image2/B11.jpg" alt="10">
-    <img class="img-slide img11" src="image2/B7.jpg" alt="11">
-    <img class="img-slide img12" src="image2/B8.jpg" alt="12">
-    <img class="img-slide img13" src="image2/B9.jpg" alt="13">
-    <img class="img-slide img14" src="image2/B10.jpg" alt="14">
-</div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 <div>
 <p class="home">西充(南充的后花园)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;西充县，隶属于四川省南充市，地处四川盆地东偏北部，南充市西北部，东邻顺庆区，南接嘉陵区，西连绵阳市盐亭县、遂宁市蓬溪县、射洪市，北接南部县，总面积1108平方千米。下辖2个街道、16个镇、5个乡。幅员面积1108平方公里，辖44个乡镇，总人口68万，是有名的柑桔之乡、烟花爆竹之乡和丝绸之乡。西充历史悠久、民风淳朴、人文荟萃，早在1959年就被省政府命名为文化县，县内书法、剪纸等艺术在全国独树一帜，诳楚安汉的汉将军纪信、三国硕儒谯周、第一届中央人民政府副主席张澜等历史文化名人均诞生于此。<br>
@@ -114,22 +34,8 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;全县有骨干商贸企业16家，其中年销售额5000万元以上的龙头大户6家。2008年实现社会消费品零售总额17.5亿元，同比增长20.4%；实现出口创汇600万美元，同比增长18%。
 </p>
 </div>
+
+
+
 </body>
-<script type="text/jscript">
-    var index=0;
-    //效果
-    function ChangeImg() {
-        index++;
-        var d=document.getElementsByClassName("img-slide");
-        if(index>=d.length){
-			index=0;
-			}
-        for(var i=0;i<d.length;i++){
-            d[i].style.display='none';
-        }
-        d[index].style.display='block';
-    }
-    //设置定时器，每隔两秒切换一张图片
-    setInterval(ChangeImg,3000);
-</script>
 </html>
