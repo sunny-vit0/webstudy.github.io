@@ -11,7 +11,8 @@ html{
 	scroll-behavior:smooth;/*css平滑滚动*/
 }
 body{
-	background-color:#CCF;
+	/*background-color:#CCF;*/
+	background:url(B.jpg);
 	padding-left:30rem;
 }
 .heading{
