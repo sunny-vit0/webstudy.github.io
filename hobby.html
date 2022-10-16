@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<link rel="stylesheet" href="hobby.css">
+<link rel="stylesheet" href="swiper/swiper-bundle.min.css"/>
+<!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height:50%;
+		padding-left:5rem;
+      }
+
+      body {
+	    background:url(B.jpg);
+	    
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+	  .heading{
+	    font-size:2rem;
+	    padding-bottom:1rem;
+	    color:#111;
+	  }
+      .swiper {
+        width:1000px;
+        height:450px;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width:100%;
+        height:100%;
+        object-fit: cover;
+      }
+    </style>
+</head>
+<body>
+<h1 class="heading">我的爱好</h1>
+<div class="input">
+<div class="one"><span>生活在日本东京的野比大雄，是一个学习不上进、日常迷迷糊糊并且饱妥同学欺负的男孩。他的性格不仅左右着自己的事业和婚姻，还对未来子孙产生莫大的影响。为此，大雄孙子的孙子世修带着猫型机器人哆啦A梦乘坐时光机突然来访,
+期望彻底改变大雄及整个家族的命运。为了什么都做不来的大雄，世修送了猫型机器人——哆啦A梦来现代。</span>
+</div>
+<div class="two">
+<!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="image3/aa (2).jpg"></div>
+        <div class="swiper-slide"><img src="image3/啦啦.jpg"></div>
+        <div class="swiper-slide"><img src="image3/哆啦a梦.jpg"></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+</div>
+<div class="three"><img src="image3/C2.jpg"></div>
+<div class="four"><span>人的眼睛为什么长在前面？为的就是要你不断的前进，不要总是回想过去的事，应该以明天为目标。<br>
+我想一直在你身边，直到你不需要我的时候。
+</span>
+</div>
+<div class="five"><img src="image3/C1.jpg"></div>
+<div class="six"><span>野比大雄，一个单纯天真的乐天派，性格懒惰，天生迟钝，什么时候都慢半拍，迟到纪录和罚站纪录等等屡次创造新纪录。学习成绩很糟糕，运动神经迟钝，做任何事情都毛手毛脚的，智力和体力只有小学二年级的水平。性格懦弱，胆子很小，经常妥人欺负，遇到问题只知道逃避。意志力薄弱，没长性，虽然经常下决心，但总是半途而废，没有一次坚持到底。
+</span>
+</div>
+</div>
+<!-- Swiper JS -->
+    <script src="swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+.input{
+	display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-gap:20px;
+    grid-auto-rows: minmax(170px,auto);
+}
+.one{
+	grid-column:1/2;
+    grid-row:1;
+	background:rgba(153,153,153,0.3);
+	border-radius:25px;
+	
+}
+.one>span{
+	text-align:center;
+	font-size:17px;
+	line-height:25px;
+	font-family:"Courier New", Courier, monospace;
+}
+.four>span{
+	text-align:center;
+	font-size:35px;
+	line-height:43px;
+	font-family:"Courier New", Courier, monospace;
+}
+.six>span{
+	text-align:center;
+	font-size:17px;
+	line-height:25px;
+	font-family:"Courier New", Courier, monospace;
+}
+.two{
+	grid-column:2/4;
+	grid-row: 1/3;
+	
+}
+.three{
+	grid-row:2/5;
+    grid-column:1;
+}
+.four{
+	grid-column:3;
+	grid-row:3;
+    background:rgba(153,153,153,0.3);
+	border-radius:25px;
+	
+}
+.five{
+    grid-column:2;
+    grid-row:3/5;
+	background:#FFF;
+}
+.six{
+	grid-column:3;
+	grid-row: 4;
+    background:rgba(153,153,153,0.3);
+	border-radius:25px;
+}
