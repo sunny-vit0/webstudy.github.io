@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background:url(B.jpg);
+	padding-left:10rem;
+}
+.heading{
+	font-size:4rem;
+	padding-bottom:2rem;
+	color:#111;
+}
+.shell{
+	
+	
+	width:100%;
+	height:500px;
+	display:flex;
+}
+.box{
+	flex:1;
+	overflow:hidden;
+	transition:.7s;
+	margin:0 20px;
+	box-shadow:10px 10px 20px rgba(0,0,0,.5);
+	border-radius:20px;
+	border:10px solid #FFF;
+	background-color:rgba(204,204,255,0.5);
+}
+.box img{
+	width:200%;
+	height:85%;
+	object-fit:cover;
+	transition:.7s;
+}
+.box span{
+	font:200 15px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align:center;
+	height:15%;
+	/*弹性布局  让页面元素水平+垂直居中*/
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.box:hover{
+	flex-basis:40%;
+}
+.box:hover img{
+	width:100%;
+	height:100%;
+}
+.chi{
+	font-size:40px;
+	line-height:35px;
+	font-family:"Courier New", Courier, monospace;
+	color:#333;
+	
+}
